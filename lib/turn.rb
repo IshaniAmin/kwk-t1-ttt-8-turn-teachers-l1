@@ -37,3 +37,19 @@ end
 def move(board, index, character = "X")
   board[index] = character
   board
+end
+
+
+
+  def turn(board)
+    puts "Please enter 1-9:"
+    position = gets.strip
+    until valid_move?(board, position)
+      puts "Wrong number. There is no such position. Input a number from 1 to 9"
+      position = gets.strip
+    end
+    move(board, position, x_or_o="X")
+    display_board(board)
+  end
+
+turn(board)

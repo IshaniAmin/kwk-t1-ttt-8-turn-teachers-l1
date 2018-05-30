@@ -48,6 +48,7 @@ def turn(board)
   until valid_move?(board, position)
     puts "Wrong number. There is no such position. Input a number from 1 to 9"
     position = gets.strip
+    position = position.to_i
   end
   move(board, position, x_or_o="X")
   display_board(board)

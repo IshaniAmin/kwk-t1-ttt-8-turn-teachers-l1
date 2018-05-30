@@ -50,4 +50,5 @@ def move(board, index, character = "X")
     move(board, position, x_or_o="X")
     display_board(board)
   end
+  
 turn(board)

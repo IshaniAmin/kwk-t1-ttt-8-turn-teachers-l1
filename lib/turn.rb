@@ -44,7 +44,7 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   position = gets.strip
-  index = input_to_index(position)
+  position = input_to_index(position)
   until valid_move?(board, position)
     puts "Wrong number. There is no such position. Input a number from 1 to 9"
     position = gets.strip
